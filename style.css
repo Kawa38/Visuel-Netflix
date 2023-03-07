@@ -1,0 +1,10 @@
+/* .FOND{
+    background-image: url("./Images/Netflix-fond.jpg");
+    background-repeat: no-repeat;
+    height: 100px;
+} */
+
+
+#carouselExample2 button {
+    width: 150px;
+}
