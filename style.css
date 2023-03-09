@@ -1,10 +1,16 @@
-/* .FOND{
-    background-image: url("./Images/Netflix-fond.jpg");
-    background-repeat: no-repeat;
-    height: 100px;
-} */
-
-
+/* Gestion de la supperpostion des boutons .. fait que pour un coté - à finir */
 #carouselExample2 button {
-    width: 150px;
+  width: 150px;
+}
+
+/* Gestion du zoom - a revoir l'image s'agrandit mais s'affiche dans le même block, du coup elle est tronqué */
+.carousel-item img {
+  animation: transform 0.3s ease;
+}
+.carousel-item img:hover {
+  transform: scale(1.6);*}
+
+/* Gestion des texte en overlay */
+.TextSurVideo {
+  top: 60%;
 }
