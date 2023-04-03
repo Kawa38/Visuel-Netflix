@@ -1,16 +1,49 @@
-/* Gestion de la supperpostion des boutons .. fait que pour un coté - à finir */
-#carouselExample2 button {
-  width: 150px;
+/* Gestion de la supperpostion des boutons dans le carroussel */
+.carousel-control-prev {
+  justify-content: start;
 }
 
-/* Gestion du zoom - a revoir l'image s'agrandit mais s'affiche dans le même block, du coup elle est tronqué */
+.carousel-control-next {
+  justify-content: end;
+}
+
 .carousel-item img {
   animation: transform 0.3s ease;
 }
 .carousel-item img:hover {
-  transform: scale(1.6);*}
+  transform: scale(1.2);
+  border-radius: 5px;
+  border: 1px solid rgba(15, 15, 15, 0.5);
+}
 
-/* Gestion des texte en overlay */
-.TextSurVideo {
+.Titre {
+  position: relative;
+}
+
+.Tvideo {
+  /* position: absolute; */
+  text-align: center;
+  background-color: rgb(8, 9, 9);
+}
+
+.Titre {
+  display: block;
+}
+
+.Tvideo video {
+  max-width: 600px;
+}
+.Ttexte {
+  position: absolute;
   top: 60%;
+  left: 2%;
+  weight: auto;
+  /* background-color: azure; */
+}
+
+.nav-link {
+  font-size: 0.7em;
+}
+.list-group-item {
+  font-size: 0.7em;
 }

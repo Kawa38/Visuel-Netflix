@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark text-light">
+  <!-- *********************************** -->
+
+  <div class="container-fluid bg-dark text-light">
+    <div class="row"> <!-- BARRE DE NAVIGATION -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 ">
+        <div class="container-fluid text-light bg-dark">
+          <a class="navbar-brand text-danger" href="#">NETFLIX</a>
+          <!-- Mettre une image à la place de texte + gras -->
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-light ">
+              <li class="nav-item ">
+                <a class="nav-link active text-light " aria-current="page" href="./index.html">Acceuil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./ListeSerie.html">Série</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./ListeFilms.html">Films</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Nouveautés les plus regardées</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Ma Liste</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Explorer par langue</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <!-- fonction search - remplacer la zone de texte par une icone -->
+              <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success text-light border-0" type="submit">Search</button>
+            </form>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h50.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+              </svg> <span class="badge bg-secondary">9</span>
+            </div>
+            <div>
+              <div class="dropdown">
+                <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="./Images/Sourire.JPG" height="30px" alt="icone">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Utilisateur 1</a></li>
+                  <li><a class="dropdown-item" href="#">Utilisateur 2</a></li>
+                  <li><a class="dropdown-item" href="#">Gérer les profils</a></li>
+                  <li><a class="dropdown-item" href="#">Transférer un profil</a></li>
+                  <li><a class="dropdown-item" href="#">Compte</a></li>
+                  <li><a class="dropdown-item" href="#">Centre d'aide</a></li>
+                  <li><a class="dropdown-item" href="#">Se déconnecter</a></li>
+
+
+                </ul>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!--VIDEO SOMMET PAGES -->
+    <div class="row">
+      <div class="card p-0">
+        <video src="./Video/L’Affaire Fourniret _ Dans la tête de Monique Olivier _ Bande-annonce officielle.mp4"
+          class="card-img-top" type=video/ogg autoplay></video> </video>
+        <div class="  p-0">
+          <h5 class="card-text  card-img-overlay TextSurVideo">L'affaire Fourniret</h5>
+        </div>
+      </div>
+    </div>
+    </p>
+
+
+    <div class="row">
+      <h5>Info</h5>
+      <div class="col col-8">
+        <p> Des icônes à rajouter</p>
+        <p>Trois copines quadragénaires partent en virée dans le Sud pour oublier leurs chagrins .... et redécouvrir
+          leur pouvoir de séduction auprés de jeunes hommes charmants.</p>
+      </div>
+      <div class="col col-4">
+        <h5>Distribution</h5>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores cumque vel voluptatum iusto soluta
+          distinctio minima unde magni eum assumenda.7 </p>
+        <h5>Genres</h5>
+        <p> Comédies romantiques, Français, Comédie </p>
+        <h5>Ce film est </h5>
+        <p>Torride, Romantique</p>
+      </div>
+      </h5>
+    </div>
+
+    <div class="row">
+      <h5>Titres Similaires</h5>
+    </div>
+
+  </div>
+
+  <!-- ************************************** -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+</div>
